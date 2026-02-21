@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Defect extends Model
+class Rejected extends Model
 {
     //
-    public function products() :HasMany
+     public function products() :HasMany
     {
         return $this->hasMany(Product::class);
     }
@@ -19,5 +19,9 @@ class Defect extends Model
     public function places() :HasMany
     {
         return $this->hasMany(Place::class);
+    }
+    public function users() :HasMany
+    {
+        return $this->hasMany(User::class);
     }
 }

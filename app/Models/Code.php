@@ -28,5 +28,13 @@ class Code extends Model
     {
         return $this->belongsTo(Temporary::class);
     }
+    public function placed() :BelongsTo
+    {
+        return $this->belongsTo(Placed::class);
+    }
+    public function rejected() :BelongsTo
+    {
+        return $this->belongsTo(Rejected::class);
+    }
 }
 

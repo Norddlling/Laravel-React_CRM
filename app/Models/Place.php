@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Place extends Model
 {
-    public $timestamps = false;
+    //
     public function wearhouses() :BelongsTo
     {
         return $this->belongsTo(Warehouse::class);
@@ -19,5 +19,13 @@ class Place extends Model
     public function defects() :BelongsTo
     {
         return $this->belongsTo(Defect::class);
+    }
+    public function placed() :BelongsTo
+    {
+        return $this->belongsTo(Placed::class);
+    }
+    public function rejected() :BelongsTo
+    {
+        return $this->belongsTo(Rejected::class);
     }
 }

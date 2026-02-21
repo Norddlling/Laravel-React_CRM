@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Warehouse extends Model
 {
-    public $timestamps = false;
-
+    //
     public function places() :HasMany
     {
         return $this->hasMany(Place::class);
