@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "c:\\Users\\capra\\Programing Projects\\Laravel-React_CRM\\database\\database.sqlite"
+  }
+]
