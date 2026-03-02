@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('arrivings', function (Blueprint $table) {
+        Schema::create('sendingstatuses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_id')->constrained('products');
-            $table->foreignId('code_id')->constrained('codes');
-            $table->boolean('processed_product')->default(false);
+            $table->foreignId('sending_id')->constrained('sendings');
+            $table->boolean('completed')->default(false);
             $table->timestamps();
         });
     }
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('arrivings');
+        Schema::dropIfExists('sendingstatuses');
     }
 };

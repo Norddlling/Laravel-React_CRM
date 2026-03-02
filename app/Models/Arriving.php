@@ -16,4 +16,12 @@ class Arriving extends Model
     {
         return $this->hasMany(Code::class);
     }
+    public function arrivingstatuses() :HasMany
+    {
+        return $this->hasMany(Arrivingstatus::class);
+    }
+    public function arrived() :HasMany
+    {
+        return $this->hasMany(Arrived::class);
+    }
 }

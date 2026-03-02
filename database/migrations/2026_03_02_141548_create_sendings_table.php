@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('sendings', function (Blueprint $table) {
             $table->id();
-            $table->integer('sending_id')->unique();
             $table->foreignId('product_id')->constrained('products');
             $table->foreignId('code_id')->constrained('codes');
             $table->boolean('processed_product')->default(false);

@@ -16,4 +16,12 @@ class Sending extends Model
     {
         return $this->hasMany(Code::class);
     }
+    public function sendingstatuses() :HasMany
+    {
+        return $this->hasMany(Sendingstatus::class);
+    }
+    public function sended() :HasMany
+    {
+        return $this->hasMany(Sended::class);
+    }
 }

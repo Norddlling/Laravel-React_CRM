@@ -70,4 +70,12 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Displaced::class);
     }
+    public function arrived() :BelongsTo
+    {
+        return $this->belongsTo(Arrived::class);
+    }
+    public function sended() :BelongsTo
+    {
+        return $this->belongsTo(Sended::class);
+    }
 }

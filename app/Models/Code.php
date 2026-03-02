@@ -56,5 +56,13 @@ class Code extends Model
     {
         return $this->belongsTo(Sending::class);
     }
+    public function arrived() :BelongsTo
+    {
+        return $this->belongsTo(Arrived::class);
+    }
+    public function sended() :BelongsTo
+    {
+        return $this->belongsTo(Sended::class);
+    }
 }
 
