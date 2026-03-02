@@ -48,4 +48,12 @@ class Product extends Model
     {
         return $this->belongsTo(Displaced::class);
     }
+    public function arriving() :BelongsTo
+    {
+        return $this->belongsTo(Arriving::class);
+    }
+    public function sending() :BelongsTo
+    {
+        return $this->belongsTo(Sending::class);
+    }
 }
