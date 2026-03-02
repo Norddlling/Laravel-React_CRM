@@ -24,4 +24,16 @@ class Carriage extends Model
     {
         return $this->belongsTo(Temporary::class);
     }
+    public function received() :BelongsTo
+    {
+        return $this->belongsTo(Received::class);
+    }
+    public function transfered() :BelongsTo
+    {
+        return $this->belongsTo(Transfered::class);
+    }
+    public function displaced() :BelongsTo
+    {
+        return $this->belongsTo(Displaced::class);
+    }
 }

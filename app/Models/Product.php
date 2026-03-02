@@ -36,4 +36,16 @@ class Product extends Model
     {
         return $this->belongsTo(Rejected::class);
     }
+    public function received() :BelongsTo
+    {
+        return $this->belongsTo(Received::class);
+    }
+    public function transfered() :BelongsTo
+    {
+        return $this->belongsTo(Transfered::class);
+    }
+    public function displaced() :BelongsTo
+    {
+        return $this->belongsTo(Displaced::class);
+    }
 }
