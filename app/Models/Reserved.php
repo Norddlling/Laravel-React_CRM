@@ -6,9 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Arriving extends Model
+class Reserved extends Model
 {
     //
+    public function sendings() :HasMany
+    {
+        return $this->hasMany(Sending::class);
+    }
     public function products() :HasMany
     {
         return $this->hasMany(Product::class);
@@ -16,17 +20,5 @@ class Arriving extends Model
     public function codes() :HasMany
     {
         return $this->hasMany(Code::class);
-    }
-    public function arrivingstatuses() :BelongsTo
-    {
-        return $this->belongsTo(Arrivingstatus::class);
-    }
-    public function arrived() :BelongsTo
-    {
-        return $this->belongsTo(Arrived::class);
-    }
-    public function deliveries() :BelongsTo
-    {
-        return $this->belongsTo(Delivery::class);
     }
 }

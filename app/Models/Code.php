@@ -64,5 +64,9 @@ class Code extends Model
     {
         return $this->belongsTo(Sended::class);
     }
+    public function reserved() :BelongsTo
+    {
+        return $this->belongsTo(Reserved::class);
+    }
 }
 

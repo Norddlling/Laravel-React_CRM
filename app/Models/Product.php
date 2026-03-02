@@ -56,4 +56,12 @@ class Product extends Model
     {
         return $this->belongsTo(Sending::class);
     }
+    public function reserved() :BelongsTo
+    {
+        return $this->belongsTo(Reserved::class);
+    }
+    public function deliveries() :BelongsTo
+    {
+        return $this->belongsTo(Delivery::class);
+    }
 }

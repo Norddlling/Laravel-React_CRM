@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sendingnumbers', function (Blueprint $table) {
+        Schema::create('reserved', function (Blueprint $table) {
             $table->id();
-            $table->string('sending_number', 15)->unique();
+            $table->foreignId('sending_id')->constrained('sendings');
+            $table->foreignId('product_id')->constrained('products');
+            $table->foreignId('code_id')->constrained('codes');
             $table->timestamps();
         });
     }
@@ -23,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sendingnumbers');
+        Schema::dropIfExists('reserved');
     }
 };

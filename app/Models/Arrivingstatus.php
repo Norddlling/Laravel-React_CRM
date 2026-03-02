@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Arrivingstatus extends Model
 {
     //
-    public function arrivings() :BelongsTo
+    public function arrivings() :HasOne
     {
-        return $this->belongsTo(Arriving::class);
+        return $this->hasOne(Arriving::class);
     }
 }

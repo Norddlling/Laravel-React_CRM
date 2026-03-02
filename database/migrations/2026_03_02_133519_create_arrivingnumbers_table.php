@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('arrivingnumbers', function (Blueprint $table) {
             $table->id();
+            $table->string('arriving_number', 15)->unique();
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Sending extends Model
@@ -16,12 +17,16 @@ class Sending extends Model
     {
         return $this->hasMany(Code::class);
     }
-    public function sendingstatuses() :HasMany
+    public function sendingstatuses() :BelongsTo
     {
-        return $this->hasMany(Sendingstatus::class);
+        return $this->belongsTo(Sendingstatus::class);
     }
-    public function sended() :HasMany
+    public function sended() :BelongsTo
     {
-        return $this->hasMany(Sended::class);
+        return $this->belongsTo(Sended::class);
+    }
+    public function reserved() :BelongsTo
+    {
+        return $this->belongsTo(Reserved::class);
     }
 }
