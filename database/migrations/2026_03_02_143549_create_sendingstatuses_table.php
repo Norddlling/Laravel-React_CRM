@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sendingstatuses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('sending_id')->constrained('sendings');
+            $table->foreignId('sendingnumber_id')->constrained('sendingnumbers');
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

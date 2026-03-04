@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sended', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('sending_id')->constrained('sendings');
+            $table->foreignId('sendingnumber_id')->constrained('sendingnumbers');
             $table->foreignId('code_id')->constrained('codes');
             $table->foreignId('user_id')->constrained('users');
             $table->datetime('completed_date');

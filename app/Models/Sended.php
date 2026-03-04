@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Sended extends Model
 {
     //
-    public function sendings() :HasMany
+    public function sendingnumbers() :HasMany
     {
-        return $this->hasMany(Sending::class);
+        return $this->hasMany(Sendingnumber::class);
     }
     public function codes() :HasMany
     {

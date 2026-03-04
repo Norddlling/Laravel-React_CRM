@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('deliveries', function (Blueprint $table) {
             $table->id();
             $table->string('delivery_number')->unique();
-            $table->foreignId('arriving_id')->constrained('arrivings');
+            $table->foreignId('arrivingnumber_id')->constrained('arrivingnumbers');
             $table->foreignId('product_id')->constrained('products');
             $table->string('serial_number')->nullable();
             $table->boolean('processed_products')->default(false);

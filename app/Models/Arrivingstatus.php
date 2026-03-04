@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Arrivingstatus extends Model
 {
     //
-    public function arrivings() :HasOne
+    public function arrivingnumbers() :HasOne
     {
-        return $this->hasOne(Arriving::class);
+        return $this->hasOne(Arrivingnumber::class);
     }
 }

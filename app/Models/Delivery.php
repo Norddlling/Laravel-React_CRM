@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Delivery extends Model
 {
     //
-    public function arrivings() :HasMany
+    public function arrivingnumbers() :HasMany
     {
-        return $this->hasMany(Arriving::class);
+        return $this->hasMany(Arrivingnumber::class);
     }
     public function products() :HasMany
     {
