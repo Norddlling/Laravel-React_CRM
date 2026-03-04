@@ -29,4 +29,8 @@ class Sending extends Model
     {
         return $this->belongsTo(Reserved::class);
     }
+    public function shipments() :BelongsTo
+    {
+        return $this->belongsTo(Shipment::class);
+    }
 }

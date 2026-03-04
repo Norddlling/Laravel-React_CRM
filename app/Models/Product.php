@@ -64,4 +64,12 @@ class Product extends Model
     {
         return $this->belongsTo(Delivery::class);
     }
+    public function delivered() :BelongsTo
+    {
+        return $this->belongsTo(Delivered::class);
+    }
+    public function shipments() :BelongsTo
+    {
+        return $this->belongsTo(Shipment::class);
+    }
 }
