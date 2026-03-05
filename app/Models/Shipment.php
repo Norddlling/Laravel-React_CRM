@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Shipment extends Model
 {
     //
+    public function shipmentnumbers() :HasMany
+    {
+        return $this->hasMany(Shipmentnumber::class);
+    }
     public function sendings() :HasMany
     {
         return $this->hasMany(Sending::class);
