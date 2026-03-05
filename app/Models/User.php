@@ -82,4 +82,8 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Delivered::class);
     }
+    public function shipped() :BelongsTo
+    {
+        return $this->belongsTo(Shipped::class);
+    }
 }

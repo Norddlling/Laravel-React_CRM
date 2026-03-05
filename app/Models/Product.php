@@ -72,4 +72,8 @@ class Product extends Model
     {
         return $this->belongsTo(Shipment::class);
     }
+    public function shipped() :BelongsTo
+    {
+        return $this->belongsTo(Shipped::class);
+    }
 }
