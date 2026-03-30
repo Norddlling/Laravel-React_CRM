@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "warehouse": "Physical"
+    },
+    {
+        "id": 2,
+        "warehouse": "Defects"
+    },
+    {
+        "id": 3,
+        "warehouse": "Receiving"
+    },
+    {
+        "id": 4,
+        "warehouse": "Transfering"
+    },
+    {
+        "id": 5,
+        "warehouse": "Temporary"
+    }
+]
