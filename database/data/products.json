@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "product_name": "Test Product 1",
+        "article": "test_product_1",
+        "serial_number": "TP1-001"
+    },
+    {
+        "id": 2,
+        "product_name": "Test Product 2",
+        "article": "test_product_2",
+        "serial_number": "TP2-001"
+    },
+    {
+        "id": 3,
+        "product_name": "Test Product 3",
+        "article": "test_product_3",
+        "serial_number": "TP3-001"
+    }
+]
