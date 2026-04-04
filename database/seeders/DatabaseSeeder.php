@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
             CarriagesSeeder::class,
             ProductsSeeder::class,
             CodesSeeder::class,
-            PhysicalSeeder::class
+            PhysicalSeeder::class,
+            DefectsSeeder::class
         ]);
     }
 }

@@ -1,0 +1,23 @@
+[
+  { "id": 1, "product_id": 1, "code_id": 22, "place_id": 1 },
+  { "id": 2, "product_id": 2, "code_id": 23, "place_id": 1 },
+  { "id": 3, "product_id": 3, "code_id": 24, "place_id": 1 },
+  { "id": 4, "product_id": 1, "code_id": 25, "place_id": 2 },
+  { "id": 5, "product_id": 2, "code_id": 26, "place_id": 2 },
+  { "id": 6, "product_id": 3, "code_id": 27, "place_id": 2 },
+  { "id": 7, "product_id": 1, "code_id": 28, "place_id": 3 },
+  { "id": 8, "product_id": 2, "code_id": 29, "place_id": 3 },
+  { "id": 9, "product_id": 3, "code_id": 30, "place_id": 3 },
+  { "id": 10, "product_id": 1, "code_id": 31, "place_id": 4 },
+  { "id": 11, "product_id": 2, "code_id": 32, "place_id": 4 },
+  { "id": 12, "product_id": 3, "code_id": 33, "place_id": 4 },
+  { "id": 13, "product_id": 1, "code_id": 34, "place_id": 5 },
+  { "id": 14, "product_id": 2, "code_id": 35, "place_id": 5 },
+  { "id": 15, "product_id": 3, "code_id": 36, "place_id": 5 },
+  { "id": 16, "product_id": 1, "code_id": 37, "place_id": 6 },
+  { "id": 17, "product_id": 2, "code_id": 38, "place_id": 6 },
+  { "id": 18, "product_id": 3, "code_id": 39, "place_id": 6 },
+  { "id": 19, "product_id": 1, "code_id": 40, "place_id": 7 },
+  { "id": 20, "product_id": 2, "code_id": 41, "place_id": 7 },
+  { "id": 21, "product_id": 3, "code_id": 42, "place_id": 7 }
+]
