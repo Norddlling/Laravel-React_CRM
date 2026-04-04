@@ -21,7 +21,9 @@ class DatabaseSeeder extends Seeder
             WarehouseSeeder::class,
             PlacesSeeder::class,
             CarriagesSeeder::class,
-            ProductsSeeder::class
+            ProductsSeeder::class,
+            CodesSeeder::class,
+            PhysicalSeeder::class
         ]);
     }
 }
