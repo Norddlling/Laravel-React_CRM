@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Physical extends Model
 {
-    protected $table = 'physical';
+    protected $table = "physical";
 
     //
     public function products() :HasMany

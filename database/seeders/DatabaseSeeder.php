@@ -24,7 +24,10 @@ class DatabaseSeeder extends Seeder
             ProductsSeeder::class,
             CodesSeeder::class,
             PhysicalSeeder::class,
-            DefectsSeeder::class
+            DefectsSeeder::class,
+            ReceivingSeeder::class,
+            TransferingSeeder::class,
+            TemporarySeeder::class
         ]);
     }
 }

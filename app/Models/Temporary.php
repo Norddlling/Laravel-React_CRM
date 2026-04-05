@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Temporary extends Model
 {
+    protected $table = "temporary";
     //
     public function products() :HasMany
     {

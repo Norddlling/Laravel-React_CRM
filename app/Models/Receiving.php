@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Receiving extends Model
 {
+    protected $table = "receiving";
     //
     public function products() :HasMany
     {

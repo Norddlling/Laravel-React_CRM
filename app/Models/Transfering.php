@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Transfering extends Model
 {
+    protected $table = "transfering";
+
     //
     public function products() :HasMany
     {
