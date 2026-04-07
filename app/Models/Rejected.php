@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Rejected extends Model
 {
+    protected $table = "rejected";
     //
      public function products() :HasMany
     {
@@ -24,4 +25,6 @@ class Rejected extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public $timestamps = false;
 }

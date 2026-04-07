@@ -27,7 +27,9 @@ class DatabaseSeeder extends Seeder
             DefectsSeeder::class,
             ReceivingSeeder::class,
             TransferingSeeder::class,
-            TemporarySeeder::class
+            TemporarySeeder::class,
+            PlacedSeeder::class,
+            RejectedSeeder::class
         ]);
     }
 }
