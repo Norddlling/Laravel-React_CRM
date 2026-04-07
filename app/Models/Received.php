@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Received extends Model
 {
+    protected $table = "received";
     //
     public function products() :HasMany
     {
@@ -24,4 +25,6 @@ class Received extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public $timestamps = false;
 }

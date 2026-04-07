@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Displaced extends Model
 {
+    protected $table = "displaced";
     //
     public function products() :HasMany
     {
@@ -24,4 +25,6 @@ class Displaced extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public $timestamps = false;
 }

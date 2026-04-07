@@ -29,7 +29,10 @@ class DatabaseSeeder extends Seeder
             TransferingSeeder::class,
             TemporarySeeder::class,
             PlacedSeeder::class,
-            RejectedSeeder::class
+            RejectedSeeder::class,
+            ReceivedSeeder::class,
+            TransferedSeeder::class,
+            DisplacedSeeder::class
         ]);
     }
 }

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Transfered extends Model
 {
+    protected $table = "transfered";
     //
     public function products() :HasMany
     {
@@ -24,4 +25,6 @@ class Transfered extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public $timestamps = false;
 }
