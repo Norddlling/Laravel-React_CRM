@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "arrivingnumber_id": 1,
+        "product_id": 1,
+        "code_id": 94,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 2,
+        "arrivingnumber_id": 1,
+        "product_id": 2,
+        "code_id": 95,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 3,
+        "arrivingnumber_id": 1,
+        "product_id": 3,
+        "code_id": 96,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 4,
+        "arrivingnumber_id": 1,
+        "product_id": 1,
+        "code_id": 97,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 5,
+        "arrivingnumber_id": 1,
+        "product_id": 2,
+        "code_id": 98,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 6,
+        "arrivingnumber_id": 1,
+        "product_id": 3,
+        "code_id": 99,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 7,
+        "arrivingnumber_id": 2,
+        "product_id": 1,
+        "code_id": 100,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 8,
+        "arrivingnumber_id": 2,
+        "product_id": 2,
+        "code_id": 101,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 9,
+        "arrivingnumber_id": 2,
+        "product_id": 3,
+        "code_id": 102,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 10,
+        "arrivingnumber_id": 2,
+        "product_id": 1,
+        "code_id": 103,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 11,
+        "arrivingnumber_id": 2,
+        "product_id": 2,
+        "code_id": 104,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 12,
+        "arrivingnumber_id": 2,
+        "product_id": 3,
+        "code_id": 105,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 13,
+        "arrivingnumber_id": 3,
+        "product_id": 1,
+        "code_id": 106,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 14,
+        "arrivingnumber_id": 3,
+        "product_id": 2,
+        "code_id": 107,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 15,
+        "arrivingnumber_id": 3,
+        "product_id": 3,
+        "code_id": 108,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 16,
+        "arrivingnumber_id": 3,
+        "product_id": 1,
+        "code_id": 109,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 17,
+        "arrivingnumber_id": 3,
+        "product_id": 2,
+        "code_id": 110,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    },
+    {
+        "id": 18,
+        "arrivingnumber_id": 3,
+        "product_id": 3,
+        "code_id": 111,
+        "processed_product": false,
+        "created_at": "2026-04-07T08:00:01Z",
+        "updated_at": "2026-04-07T08:00:02Z"
+    }
+]
