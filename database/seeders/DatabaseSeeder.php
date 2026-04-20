@@ -36,7 +36,9 @@ class DatabaseSeeder extends Seeder
             AarrivingnumbersSeeder::class,
             SendingnumbersSeeder::class,
             AarrivingsSeeder::class,
-            SendingsSeeder::class
+            SendingsSeeder::class,
+            ArrivingstatusesSeeder::class,
+            SendingstatusesSeeder::class
         ]);
     }
 }
