@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 1,
         "code_id": 94,
         "processed_product": false,
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 2,
         "code_id": 95,
         "processed_product": false,
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 3,
         "code_id": 96,
         "processed_product": false,
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 1,
         "code_id": 97,
         "processed_product": false,
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 2,
         "code_id": 98,
         "processed_product": false,
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "arrivingnumber_id": 1,
+        "arrivingnumber_id": 4,
         "product_id": 3,
         "code_id": 99,
         "processed_product": false,
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 1,
         "code_id": 100,
         "processed_product": false,
@@ -64,7 +64,7 @@
     },
     {
         "id": 8,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 2,
         "code_id": 101,
         "processed_product": false,
@@ -73,7 +73,7 @@
     },
     {
         "id": 9,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 3,
         "code_id": 102,
         "processed_product": false,
@@ -82,7 +82,7 @@
     },
     {
         "id": 10,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 1,
         "code_id": 103,
         "processed_product": false,
@@ -91,7 +91,7 @@
     },
     {
         "id": 11,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 2,
         "code_id": 104,
         "processed_product": false,
@@ -100,7 +100,7 @@
     },
     {
         "id": 12,
-        "arrivingnumber_id": 2,
+        "arrivingnumber_id": 5,
         "product_id": 3,
         "code_id": 105,
         "processed_product": false,
@@ -109,7 +109,7 @@
     },
     {
         "id": 13,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 1,
         "code_id": 106,
         "processed_product": false,
@@ -118,7 +118,7 @@
     },
     {
         "id": 14,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 2,
         "code_id": 107,
         "processed_product": false,
@@ -127,7 +127,7 @@
     },
     {
         "id": 15,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 3,
         "code_id": 108,
         "processed_product": false,
@@ -136,7 +136,7 @@
     },
     {
         "id": 16,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 1,
         "code_id": 109,
         "processed_product": false,
@@ -145,7 +145,7 @@
     },
     {
         "id": 17,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 2,
         "code_id": 110,
         "processed_product": false,
@@ -154,7 +154,7 @@
     },
     {
         "id": 18,
-        "arrivingnumber_id": 3,
+        "arrivingnumber_id": 6,
         "product_id": 3,
         "code_id": 111,
         "processed_product": false,

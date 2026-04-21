@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('arrived', function (Blueprint $table) {
             $table->id();
             $table->foreignId('arrivingnumbers_id')->constrained('arrivingnumbers');
+            $table->foreignId('product_id')->constrained('products');
             $table->foreignId('code_id')->constrained('codes');
             $table->foreignId('user_id')->constrained('users');
             $table->datetime('completed_date');

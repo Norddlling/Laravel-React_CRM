@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Sended extends Model
 {
+    protected $table = "sended";
     //
     public function sendingnumbers() :HasMany
     {
         return $this->hasMany(Sendingnumber::class);
+    }
+    public function products() :HasMany
+    {
+        return $this->hasMany(Product::class);
     }
     public function codes() :HasMany
     {
@@ -20,4 +25,6 @@ class Sended extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public $timestamps = false;
 }
