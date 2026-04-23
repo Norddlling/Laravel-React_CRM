@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Carriage extends Model
 {  
@@ -12,28 +13,28 @@ class Carriage extends Model
     {
         return $this->belongsTo(Warehouse::class);
     }
-    public function receiving() :BelongsTo
+    public function receiving() :HasMany
     {
-        return $this->belongsTo(Receiving::class);
+        return $this->hasMany(Receiving::class);
     }
-    public function transfering() :BelongsTo
+    public function transfering() :HasMany
     {
-        return $this->belongsTo(Transfering::class);
+        return $this->hasMany(Transfering::class);
     }
-    public function temporary() :BelongsTo
+    public function temporary() :HasMany
     {
-        return $this->belongsTo(Temporary::class);
+        return $this->hasMany(Temporary::class);
     }
-    public function received() :BelongsTo
+    public function received() :HasMany
     {
-        return $this->belongsTo(Received::class);
+        return $this->hasMany(Received::class);
     }
-    public function transfered() :BelongsTo
+    public function transfered() :HasMany
     {
-        return $this->belongsTo(Transfered::class);
+        return $this->hasMany(Transfered::class);
     }
-    public function displaced() :BelongsTo
+    public function displaced() :HasMany
     {
-        return $this->belongsTo(Displaced::class);
+        return $this->hasMany(Displaced::class);
     }
 }

@@ -3,21 +3,21 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Shipmentnumber extends Model
 {
     //
-    public function shipments() :BelongsTo
+    public function shipments() :HasMany
     {
-        return $this->belongsTo(Shipment::class);
+        return $this->hasMany(Shipment::class);
     }
-    public function shipmentprocessed() :BelongsTo
+    public function shipmentprocessed() :HasMany
     {
-        return $this->belongsTo(Shipmentprocessed::class);
+        return $this->hasMany(Shipmentprocessed::class);
     }
-    public function shipped() :BelongsTo
+    public function shipped() :HasMany
     {
-        return $this->belongsTo(Shipped::class);
+        return $this->hasMany(Shipped::class);
     }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Place extends Model
 {
@@ -12,20 +13,20 @@ class Place extends Model
     {
         return $this->belongsTo(Warehouse::class);
     }
-    public function physical() :BelongsTo
+    public function physical() :HasMany
     {
-        return $this->belongsTo(Physical::class);
+        return $this->hasMany(Physical::class);
     }
-    public function defects() :BelongsTo
+    public function defects() :HasMany
     {
-        return $this->belongsTo(Defect::class);
+        return $this->hasMany(Defect::class);
     }
-    public function placed() :BelongsTo
+    public function placed() :HasMany
     {
-        return $this->belongsTo(Placed::class);
+        return $this->hasMany(Placed::class);
     }
-    public function rejected() :BelongsTo
+    public function rejected() :HasMany
     {
-        return $this->belongsTo(Rejected::class);
+        return $this->hasMany(Rejected::class);
     }
 }

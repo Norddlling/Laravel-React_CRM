@@ -3,78 +3,78 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Code extends Model
 {
     //
-    public function physical() :BelongsTo
+    public function physical() :HasMany
     {
-        return $this->belongsTo(Physical::class);
+        return $this->hasMany(Physical::class);
     }
-    public function defects() :BelongsTo
+    public function defects() :HasMany
     {
-        return $this->belongsTo(Defect::class);
+        return $this->hasMany(Defect::class);
     }
-    public function receiving() :BelongsTo
+    public function receiving() :HasMany
     {
-        return $this->belongsTo(Receiving::class);
+        return $this->hasMany(Receiving::class);
     }
-    public function transfering() :BelongsTo
+    public function transfering() :HasMany
     {
-        return $this->belongsTo(Transfering::class);
+        return $this->hasMany(Transfering::class);
     }
-    public function temporary() :BelongsTo
+    public function temporary() :HasMany
     {
-        return $this->belongsTo(Temporary::class);
+        return $this->hasMany(Temporary::class);
     }
-    public function placed() :BelongsTo
+    public function placed() :HasMany
     {
-        return $this->belongsTo(Placed::class);
+        return $this->hasMany(Placed::class);
     }
-    public function rejected() :BelongsTo
+    public function rejected() :HasMany
     {
-        return $this->belongsTo(Rejected::class);
+        return $this->hasMany(Rejected::class);
     }
-    public function received() :BelongsTo
+    public function received() :HasMany
     {
-        return $this->belongsTo(Received::class);
+        return $this->hasMany(Received::class);
     }
-    public function transfered() :BelongsTo
+    public function transfered() :HasMany
     {
-        return $this->belongsTo(Transfered::class);
+        return $this->hasMany(Transfered::class);
     }
-    public function displaced() :BelongsTo
+    public function displaced() :HasMany
     {
-        return $this->belongsTo(Displaced::class);
+        return $this->hasMany(Displaced::class);
     }
-    public function arriving() :BelongsTo
+    public function arriving() :HasMany
     {
-        return $this->belongsTo(Arriving::class);
+        return $this->hasMany(Arriving::class);
     }
-    public function sending() :BelongsTo
+    public function sending() :HasMany
     {
-        return $this->belongsTo(Sending::class);
+        return $this->hasMany(Sending::class);
     }
-    public function arrived() :BelongsTo
+    public function arrived() :HasMany
     {
-        return $this->belongsTo(Arrived::class);
+        return $this->hasMany(Arrived::class);
     }
-    public function sended() :BelongsTo
+    public function sended() :HasMany
     {
-        return $this->belongsTo(Sended::class);
+        return $this->hasMany(Sended::class);
     }
-    public function reserved() :BelongsTo
+    public function reserved() :HasMany
     {
-        return $this->belongsTo(Reserved::class);
+        return $this->hasMany(Reserved::class);
     }
-    public function shipments() :BelongsTo
+    public function shipments() :HasMany
     {
-        return $this->belongsTo(Shipment::class);
+        return $this->hasMany(Shipment::class);
     }
-    public function shipped() :BelongsTo
+    public function shipped() :HasMany
     {
-        return $this->belongsTo(Shipped::class);
+        return $this->hasMany(Shipped::class);
     }
 }
 

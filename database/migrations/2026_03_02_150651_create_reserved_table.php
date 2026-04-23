@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('sendingnumber_id')->constrained('sendingnumbers');
             $table->foreignId('product_id')->constrained('products');
             $table->foreignId('code_id')->constrained('codes');
-            $table->timestamps();
+            $table->datetime('reserved_date');
         });
     }
 

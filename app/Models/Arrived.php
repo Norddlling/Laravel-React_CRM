@@ -3,27 +3,27 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Arrived extends Model
 {
     protected $table = "arrived";
     //
-    public function arrivingnumbers() :HasMany
+    public function arrivingnumbers() :BelongsTo
     {
-        return $this->hasMany(Arrivingnumber::class);
+        return $this->belongsTo(Arrivingnumber::class);
     }
-    public function products() :HasMany
+    public function products() :BelongsTo
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
-    public function codes() :HasMany
+    public function codes() :BelongsTo
     {
-        return $this->hasMany(Code::class);
+        return $this->belongsTo(Code::class);
     }
-    public function users() :HasMany
+    public function users() :BelongsTo
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public $timestamps = false;

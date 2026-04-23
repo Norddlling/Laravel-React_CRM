@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
 {
@@ -50,40 +50,40 @@ class User extends Authenticatable
             'two_factor_confirmed_at' => 'datetime',
         ];
     }
-    public function placed() :BelongsTo
+    public function placed() :HasMany
     {
-        return $this->belongsTo(Placed::class);
+        return $this->hasMany(Placed::class);
     }
-    public function rejected() :BelongsTo
+    public function rejected() :HasMany
     {
-        return $this->belongsTo(Rejected::class);
+        return $this->hasMany(Rejected::class);
     }
-    public function received() :BelongsTo
+    public function received() :HasMany
     {
-        return $this->belongsTo(Received::class);
+        return $this->hasMany(Received::class);
     }
-    public function transfered() :BelongsTo
+    public function transfered() :HasMany
     {
-        return $this->belongsTo(Transfered::class);
+        return $this->hasMany(Transfered::class);
     }
-    public function displaced() :BelongsTo
+    public function displaced() :HasMany
     {
-        return $this->belongsTo(Displaced::class);
+        return $this->hasMany(Displaced::class);
     }
-    public function arrived() :BelongsTo
+    public function arrived() :HasMany
     {
-        return $this->belongsTo(Arrived::class);
+        return $this->hasMany(Arrived::class);
     }
-    public function sended() :BelongsTo
+    public function sended() :HasMany
     {
-        return $this->belongsTo(Sended::class);
+        return $this->hasMany(Sended::class);
     }
-    public function delivered() :BelongsTo
+    public function delivered() :HasMany
     {
-        return $this->belongsTo(Delivered::class);
+        return $this->hasMany(Delivered::class);
     }
-    public function shipped() :BelongsTo
+    public function shipped() :HasMany
     {
-        return $this->belongsTo(Shipped::class);
+        return $this->hasMany(Shipped::class);
     }
 }

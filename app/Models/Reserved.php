@@ -4,21 +4,23 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Reserved extends Model
-{
-    //
-    public function sendingnumbers() :HasMany
+{   
+    protected $table = "reserved";
+
+    public function sendingnumbers() :BelongsTo
     {
-        return $this->hasMany(Sendingnumber::class);
+        return $this->belongsTo(Sendingnumber::class);
     }
-    public function products() :HasMany
+    public function products() :BelongsTo
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
-    public function codes() :HasMany
+    public function codes() :BelongsTo
     {
-        return $this->hasMany(Code::class);
+        return $this->belongsTo(Code::class);
     }
+
+    public $timestamps = false;
 }

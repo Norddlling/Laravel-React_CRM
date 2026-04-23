@@ -3,33 +3,34 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Sendingnumber extends Model
 {
     //
-    public function sendingnumbers() :BelongsTo
+    public function sendings() :HasMany
     {
-        return $this->belongsTo(Sendingnumber::class);
+        return $this->hasMany(Sending::class);
     }
-    public function sendingstatuses() :BelongsTo
+    public function sendingstatuses() :HasOne
     {
-        return $this->belongsTo(Sendingstatus::class);
+        return $this->hasOne(Sendingstatus::class);
     }
-    public function sended() :BelongsTo
+    public function sended() :HasMany
     {
-        return $this->belongsTo(Sended::class);
+        return $this->hasMany(Sended::class);
     }
-    public function reserved() :BelongsTo
+    public function reserved() :HasMany
     {
-        return $this->belongsTo(Reserved::class);
+        return $this->hasMany(Reserved::class);
     }
-    public function shipments() :BelongsTo
+    public function shipments() :HasMany
     {
-        return $this->belongsTo(Shipment::class);
+        return $this->hasMany(Shipment::class);
     }
-    public function shipped() :BelongsTo
+    public function shipped() :HasMany
     {
-        return $this->belongsTo(Shipped::class);
+        return $this->hasMany(Shipped::class);
     }
 }

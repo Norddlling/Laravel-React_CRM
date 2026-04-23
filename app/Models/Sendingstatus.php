@@ -3,14 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 
 class Sendingstatus extends Model
 {
     //
-    public function sendingnumbers() :HasOne
+    public function sendingnumbers() :BelongsTo
     {
-        return $this->hasOne(Sendingnumber::class);
+        return $this->belongsTo(Sendingnumber::class);
     }
 }

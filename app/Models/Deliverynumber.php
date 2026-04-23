@@ -3,17 +3,17 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Deliverynumber extends Model
 {
     //
-    public function deliveries() :BelongsTo
+    public function deliveries() :HasMany
     {
-        return $this->belongsTo(Delivery::class);
+        return $this->hasMany(Delivery::class);
     }
-    public function delivered() :BelongsTo
+    public function delivered() :HasMany
     {
-        return $this->belongsTo(Delivered::class);
+        return $this->hasMany(Delivered::class);
     }
 }

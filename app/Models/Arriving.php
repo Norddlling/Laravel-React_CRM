@@ -4,22 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Arriving extends Model
 {
     //
-    public function arrivingnumbers() :HasOne
+    public function arrivingnumbers() :BelongsTo
     {
-        return $this->hasOne(Arrivingnumber::class);
+        return $this->belongsTo(Arrivingnumber::class);
     }
-    public function products() :HasMany
+    public function products() :BelongsTo
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
-    public function codes() :HasMany
+    public function codes() :BelongsTo
     {
-        return $this->hasMany(Code::class);
+        return $this->belongsTo(Code::class);
     }
 }

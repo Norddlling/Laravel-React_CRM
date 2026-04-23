@@ -3,25 +3,25 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Delivered extends Model
 {
     //
-    public function deliverynumbers() :HasMany
+    public function deliverynumbers() :BelongsTo
     {
-        return $this->hasMany(Deliverynumber::class);
+        return $this->belongsTo(Deliverynumber::class);
     }
-    public function arrivingnumbers() :HasMany
+    public function arrivingnumbers() :BelongsTo
     {
-        return $this->hasMany(Arrivingnumber::class);
+        return $this->belongsTo(Arrivingnumber::class);
     }
-    public function products() :HasMany
+    public function products() :BelongsTo
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
-    public function users() :HasMany
+    public function users() :BelongsTo
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
 }

@@ -3,27 +3,27 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Rejected extends Model
 {
     protected $table = "rejected";
     //
-     public function products() :HasMany
+     public function products() :BelongsTo
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
-    public function codes() :HasMany
+    public function codes() :BelongsTo
     {
-        return $this->hasMany(Code::class);
+        return $this->belongsTo(Code::class);
     }
-    public function places() :HasMany
+    public function places() :BelongsTo
     {
-        return $this->hasMany(Place::class);
+        return $this->belongsTo(Place::class);
     }
-    public function users() :HasMany
+    public function users() :BelongsTo
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public $timestamps = false;
